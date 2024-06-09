@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .contact-info span {
+    margin-right: 10px;
+}
+
+header .contact-info button {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-section {
+    background: url('p1.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.search-section form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-section input,
+.search-section select,
+.search-section button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.search-section .price-range {
+    width: 100%;
+}
+
+.latest-properties {
+    background: #f0f0f0;
+    padding: 50px 0;
+}
+
+.latest-properties h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.property-item {
+    background: #fff;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.property-item img {
+    width: 100%;
+    height: auto;
+}
+
+.property-item .status {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+.contact-us {
+    background: url('bil.jpg') no-repeat center center;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.agents {
+    padding: 50px 0;
+}
+
+.agents h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.agents-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.agent-item {
+    background: #fff;
+    padding: 20px;
+    width: 22%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.agent-item img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+footer .footer-section {
+    width: 24%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background-color: black;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .recent-properties {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .recent-property {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .recent-property img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+footer .recent-property p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .recent-property span {
+    display: block;
+    font-size: 12px;
+    color: #ccc;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer input, footer textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer button {
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .search-section form {
+        flex-direction: column;
+    }
+
+    .search-section input,
+    .search-section select,
+    .search-section button {
+        width: 100%;
+    }
+
+    .properties-list,
+    .agents-list {
+        flex-direction: column;
+    }
+
+    .property-item,
+    .agent-item,
+    .footer-section {
+        width: 100%;
+    }
+}
